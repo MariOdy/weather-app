@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "../../../../Container.styles";
+import { Container } from "src/Container.styles";
 
 export const HeaderWrapper = styled(Container)`
   font-size: 20px;
@@ -30,5 +30,4 @@ export const SelectWrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
-
 `;

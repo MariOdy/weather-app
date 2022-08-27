@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "../../../../Container.styles";
+import { Container } from "src/Container.styles";
 
 export const AllDaysWrapper = styled(Container)`
   background: #ffffff;

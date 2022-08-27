@@ -1,5 +1,5 @@
 import React from "react";
-import useWeather from "../../../../utils/useWeather";
+import useWeather from "src/utils/useWeather";
 import { Bottom, ThisDayWrapper, Top } from "./style";
 
 const ThisDay: React.FC = () => {
