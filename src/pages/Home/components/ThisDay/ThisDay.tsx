@@ -1,5 +1,6 @@
 import React from "react";
 import useWeather from "src/utils/useWeather";
+import CurrentTime from "./CurrentTime";
 import { Bottom, ThisDayWrapper, Top } from "./style";
 
 const ThisDay: React.FC = () => {
@@ -22,7 +23,7 @@ const ThisDay: React.FC = () => {
             <img src="./images/sun.svg" alt="" />
           </Top>
           <Bottom>
-            <div>Время: 21:54</div>
+            <CurrentTime locationUtcOffsetInSeconds={data?.timezone || 0} />
             <div>Город: {cityName}</div>
           </Bottom>
         </>
