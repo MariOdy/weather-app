@@ -4,11 +4,12 @@ import CurrentTime from "./CurrentTime";
 import { Bottom, ThisDayWrapper, Top } from "./style";
 
 const ThisDay: React.FC = () => {
-  const { data, isLoading } = useWeather("London");
+  const { data, isLoading } = useWeather("Kyiv");
 
   const temperature = Math.round(data?.main.temp || 0);
   const cityName = data?.name;
 
+  console.log(data);
   return (
     <ThisDayWrapper>
       {isLoading ? (
@@ -18,13 +19,15 @@ const ThisDay: React.FC = () => {
           <Top>
             <div>
               <h2>{temperature}°</h2>
-              <h3>Сегодня</h3>
+              <h3>Today</h3>
             </div>
             <img src="./images/sun.svg" alt="" />
           </Top>
           <Bottom>
             <CurrentTime locationUtcOffsetInSeconds={data?.timezone || 0} />
-            <div>Город: {cityName}</div>
+            <div>
+              {cityName} - {data?.sys.country}
+            </div>
           </Bottom>
         </>
       )}

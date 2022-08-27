@@ -26,7 +26,7 @@ const CurrentTime: React.FC<CurrentTimeProps> = ({
     currentTimeAdjusted
   );
 
-  return <div>Время: {time}</div>;
+  return <div>{time}</div>;
 };
 
 export default CurrentTime;

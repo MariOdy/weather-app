@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ThisDayInfoWrapper = styled.div`
   width: 750px;
-  height: 300px;
+  height: 250px;
   padding: 30px;
   box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
   border-radius: 20px;
@@ -11,18 +11,18 @@ export const ThisDayInfoWrapper = styled.div`
   > div {
     display: flex;
     flex-direction: column;
-    position: relative ;
+    position: relative;
     justify-content: center;
-    gap: 25px ;
-    height: 100% ;
-    z-index: 1 ;
+    gap: 20px;
+    height: 100%;
+    z-index: 1;
   }
 
   > img {
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 0 ;
+    z-index: 0;
   }
 `;
 
@@ -48,7 +48,7 @@ export const InfoItem = styled.div`
     line-height: 17px;
     text-align: left;
     color: #939cb0;
-    flex: 1 ;
+    flex: 1;
   }
   p {
     font-weight: 400;
@@ -56,6 +56,6 @@ export const InfoItem = styled.div`
     line-height: 17px;
     color: #000000;
     opacity: 0.88;
-    flex: 3 ;
+    flex: 3;
   }
 `;
