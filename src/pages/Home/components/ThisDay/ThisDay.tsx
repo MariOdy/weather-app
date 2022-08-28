@@ -9,7 +9,6 @@ const ThisDay: React.FC = () => {
   const temperature = Math.round(data?.main.temp || 0);
   const cityName = data?.name;
 
-  console.log(data);
   return (
     <ThisDayWrapper>
       {isLoading ? (

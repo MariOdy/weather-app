@@ -11,18 +11,9 @@ export const ThisDayInfoWrapper = styled.div`
   > div {
     display: flex;
     flex-direction: column;
-    position: relative;
     justify-content: center;
     gap: 20px;
     height: 100%;
-    z-index: 1;
-  }
-
-  > img {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
   }
 `;
 

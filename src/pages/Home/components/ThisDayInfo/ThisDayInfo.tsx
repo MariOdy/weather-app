@@ -56,14 +56,11 @@ const ThisDayInfoItem: React.FC<ThisDayInfoItemProps> = ({ inf }) => {
 const ThisDayInfo: React.FC = () => {
   return (
     <ThisDayInfoWrapper>
-      <img src="./images/cloud.png" alt="" className="cloud" />
       <div>
         {infoData.map((inf) => (
           <ThisDayInfoItem inf={inf} key={inf.id} />
         ))}
       </div>
-
-      
     </ThisDayInfoWrapper>
   );
 };
