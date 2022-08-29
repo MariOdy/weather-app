@@ -7,7 +7,6 @@ export const HomeWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-height: 100vh;
 `;
 
 export const ThisDayBlock = styled(Container)`
