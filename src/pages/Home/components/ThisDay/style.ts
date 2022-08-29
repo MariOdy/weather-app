@@ -12,6 +12,10 @@ export const ThisDayWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
+
+  @media (max-width: 980px) {
+    max-width: 350px;
+  }
 `;
 
 export const Top = styled.div`

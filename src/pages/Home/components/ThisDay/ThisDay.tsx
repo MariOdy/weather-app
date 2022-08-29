@@ -1,10 +1,13 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import useWeather from "src/utils/useWeather";
 import CurrentTime from "./CurrentTime";
 import { Bottom, ThisDayWrapper, Top } from "./style";
 
 const ThisDay: React.FC = () => {
-  const { data, isLoading } = useWeather("Kyiv");
+  const { id } = useParams();
+
+  const { data, isLoading } = useWeather(id ? `${id}` : "Kyiv");
 
   const temperature = Math.round(data?.main.temp || 0);
   const cityName = data?.name;

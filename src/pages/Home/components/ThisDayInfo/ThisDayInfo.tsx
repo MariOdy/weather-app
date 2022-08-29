@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import useWeather from "src/utils/useWeather";
 import { ThisDayInfoWrapper, ImgWrapper } from "./styles";
 
@@ -14,7 +15,8 @@ const imgInfo = [
 ];
 
 const ThisDayInfo: React.FC = () => {
-  const { data, isLoading } = useWeather("Kyiv");
+  const { id } = useParams();
+  const { data, isLoading } = useWeather(id ? `${id}` : "Kyiv");
 
   // array of Categories results
   const temp = `${Math.round(data?.main.temp || 0)}°C feels like ${Math.round(
@@ -42,6 +44,7 @@ const ThisDayInfo: React.FC = () => {
           <h2>{inf}</h2>
         ))}
       </div>
+
       <div>
         {dataInfo.map((info) => (
           <p>{info}</p>

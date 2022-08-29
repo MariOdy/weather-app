@@ -8,4 +8,9 @@ export const ThisDayBlock = styled(Container)`
   justify-content: center;
   align-items: center;
   gap: 50px;
+
+  @media (max-width: 980px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `;

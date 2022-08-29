@@ -5,12 +5,20 @@ export const AllDaysWrapper = styled(Container)`
   border-radius: 20px;
   padding: 20px;
   height: 170px;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
   gap: 20px;
+
+  @media (max-width: 980px) {
+    height: fit-content;
+    width: 350px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 `;
 
 export const DayWrapper = styled.div`
@@ -22,6 +30,10 @@ export const DayWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 12px;
+
+  @media (max-width: 980px) {
+    gap: 20px;
+  }
 `;
 
 export const TopPart = styled.div`
@@ -32,9 +44,9 @@ export const TopPart = styled.div`
   > div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between ;
+    justify-content: space-between;
     gap: 10px;
-    flex: 1 ;
+    flex: 1;
     h2 {
       font-weight: 500;
       font-size: 24px;
@@ -56,10 +68,10 @@ export const BottomPart = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  h2{
+  h2 {
     font-weight: 400;
-      font-size: 30px;
-      line-height: 22px;
+    font-size: 30px;
+    line-height: 22px;
   }
 
   h3 {

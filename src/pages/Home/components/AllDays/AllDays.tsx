@@ -1,13 +1,14 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+
 import useWeatherForecast from "src/utils/useWeatherForecast";
 import Day from "./Day";
 import { AllDaysWrapper } from "./styles";
 
 const AllDays: React.FC = () => {
-  const { days, isLoading } = useWeatherForecast("Kyiv");
+  const { id } = useParams();
 
-  console.clear();
-  console.log(days);
+  const { days, isLoading } = useWeatherForecast(id ? `${id}` : "Kyiv");
 
   return (
     <AllDaysWrapper>
