@@ -15,6 +15,7 @@ export const ThisDayWrapper = styled.div`
 
   @media (max-width: 980px) {
     max-width: 350px;
+    min-height: 250px;
   }
 `;
 
@@ -55,7 +56,7 @@ export const Bottom = styled.div`
   gap: 4px;
 
   font-weight: 300;
-  font-size: 30px;
+  font-size: 22px;
   line-height: 30px;
   color: #939cb0;
 `;

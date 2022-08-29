@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { Container } from "src/Container.styles";
 
-export const HomeWrapper = styled.div``;
+export const HomeWrapper = styled.div`
+  padding: 16px;
+`;
 
 export const ThisDayBlock = styled(Container)`
   display: flex;

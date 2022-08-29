@@ -4,7 +4,7 @@ import { Container } from "src/Container.styles";
 export const AllDaysWrapper = styled(Container)`
   border-radius: 20px;
   padding: 20px;
-  height: 170px;
+  min-height: 170px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 
@@ -14,10 +14,9 @@ export const AllDaysWrapper = styled(Container)`
   gap: 20px;
 
   @media (max-width: 980px) {
-    height: fit-content;
     width: 350px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 `;
 
@@ -61,6 +60,21 @@ export const TopPart = styled.div`
   img {
     width: 48px;
     height: 48px;
+  }
+
+  @media (max-width: 980px) {
+    > div {
+      h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+  img {
+    width: 55px;
+    height: 55px;
   }
 `;
 export const BottomPart = styled.div`
