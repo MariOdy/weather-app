@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const ThisDayWrapper = styled.div`
-  width: 400 px;
-  min-height: 250px;
+  width: 400px;
+  min-height: 300px;
   padding: 20px;
-  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   border-radius: 20px;
 
   display: flex;

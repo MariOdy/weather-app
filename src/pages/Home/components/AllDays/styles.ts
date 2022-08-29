@@ -2,11 +2,10 @@ import styled from "styled-components";
 import { Container } from "src/Container.styles";
 
 export const AllDaysWrapper = styled(Container)`
-  background: #ffffff;
-  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
   border-radius: 20px;
   padding: 20px;
   height: 170px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 
   display: grid;
   grid-template-columns: repeat(6, 1fr);
