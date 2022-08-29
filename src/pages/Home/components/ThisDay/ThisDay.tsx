@@ -32,9 +32,6 @@ const ThisDay: React.FC = () => {
     imageSrc = "./images/weatherIcons/thunderstorm.svg";
   }
 
-  console.clear();
-  console.log(weatherIcon);
-
   return (
     <ThisDayWrapper>
       {isLoading ? (
