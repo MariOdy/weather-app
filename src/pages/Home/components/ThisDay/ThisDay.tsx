@@ -10,26 +10,25 @@ const ThisDay: React.FC = () => {
   const cityName = data?.name;
 
   // weather icons
-  const weatherIcon = data?.weather[0].description;
+  const weatherIcon = data?.weather[0].main;
+  const weatherId = data?.weather[0].id;
   let imageSrc = "./images/mainly_cloudy.svg";
 
-  if (weatherIcon === "clear sky") {
+  if (weatherIcon === "Clear") {
     imageSrc = "./images/weatherIcons/clear-sky.svg";
-  } else if (weatherIcon === "broken clouds") {
+  } else if (weatherIcon === "Clouds" && (weatherId || 0) >= 803) {
     imageSrc = "./images/weatherIcons/broken-clouds.svg";
-  } else if (weatherIcon === "few clouds") {
+  } else if (weatherIcon === "Clouds" && (weatherId || 0) < 803) {
     imageSrc = "./images/weatherIcons/few-clouds.svg";
-  } else if (weatherIcon === "mist") {
+  } else if (weatherIcon === "Atmosphere") {
     imageSrc = "./images/weatherIcons/mist.svg";
-  } else if (weatherIcon === "rain") {
+  } else if (weatherIcon === "Rain") {
     imageSrc = "./images/weatherIcons/rain.svg";
-  } else if (weatherIcon === "scattered clouds") {
-    imageSrc = "./images/weatherIcons/scattered-clouds.svg";
-  } else if (weatherIcon === "shower rain") {
+  } else if (weatherIcon === "Rain" && (weatherId || 0) > 505) {
     imageSrc = "./images/weatherIcons/shower-rain.svg";
-  } else if (weatherIcon === "snow") {
+  } else if (weatherIcon === "Snow") {
     imageSrc = "./images/weatherIcons/snow.svg";
-  } else if (weatherIcon === "thunderstorm") {
+  } else if (weatherIcon === "Thunderstorm") {
     imageSrc = "./images/weatherIcons/thunderstorm.svg";
   }
 

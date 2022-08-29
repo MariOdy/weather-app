@@ -23,6 +23,12 @@ const Day: React.FC<DayProps> = ({ day }) => {
 
   const dates = date.split("-").reverse().join(".").substring(0, 5);
 
+
+
+  // console.clear();
+  // console.log(forecast);
+
+
   return (
     <DayWrapper>
       <TopPart>

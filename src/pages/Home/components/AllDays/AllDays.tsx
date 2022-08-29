@@ -6,6 +6,9 @@ import { AllDaysWrapper } from "./styles";
 const AllDays: React.FC = () => {
   const { days, isLoading } = useWeatherForecast("Kyiv");
 
+  console.clear();
+  console.log(days);
+
   return (
     <AllDaysWrapper>
       {days.map((day) => (
