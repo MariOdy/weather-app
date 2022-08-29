@@ -3,6 +3,11 @@ import { Container } from "src/Container.styles";
 
 export const HomeWrapper = styled.div`
   padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
 `;
 
 export const ThisDayBlock = styled(Container)`
@@ -14,5 +19,19 @@ export const ThisDayBlock = styled(Container)`
   @media (max-width: 980px) {
     flex-direction: column;
     gap: 20px;
+  }
+`;
+
+export const Git = styled.a`
+  margin-top: 40px;
+  align-self: flex-end;
+  svg {
+    width: 40px;
+    height: 40px;
+    color: black;
+  }
+
+  @media (max-width: 980px) {
+    margin-top: 20px;
   }
 `;
