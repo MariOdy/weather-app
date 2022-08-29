@@ -37,6 +37,11 @@ export const Top = styled.div`
       font-size: 40px;
     }
   }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 export const Bottom = styled.div`
   display: flex;
